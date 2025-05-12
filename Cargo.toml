@@ -1,0 +1,12 @@
+[package]
+name = "wasi-nn-demo-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+
+wasi = "0.14"
+wasi-nn = { git = "https://github.com/bytecodealliance/wasi-nn.git", rev = "2e36f6b" }

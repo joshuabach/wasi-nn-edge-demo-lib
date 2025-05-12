@@ -1,0 +1,13 @@
+stages:
+  - build
+
+rust-nightly:
+  stage: build
+  image: rustlang/rust:nightly
+  script:
+    - cargo check --target=wasm32-wasip2 --verbose
+    - cargo test --verbose
+    - cargo doc --verbose
+  artifacts:
+    paths:
+      - target/doc/wasi_nn_demo_lib
