@@ -38,8 +38,7 @@ using a distribution package, or with `rustup` (recommended). If you
 use rustup, any `cargo` command should automatically install the
 required components from the correct rust release channel due to the
 definitions in [rust-toolchain.toml](rust-toolchain.toml) in this
-repository. If necessary, the usage of these features could be removed
-without compromising functionality.
+repository.
 
 
 ## Usage
